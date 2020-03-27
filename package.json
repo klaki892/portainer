@@ -28,7 +28,7 @@
     "start:server": "grunt clean:server && grunt start:server",
     "start:client": "grunt clean:client && grunt start:client",
     "build:server:offline": "cd ./api/cmd/portainer && CGO_ENABLED=0 go build -a --installsuffix cgo --ldflags '-s' && mv -f portainer ../../../dist/portainer",
-    "clean:all": "grunt clean:all",
+    "clean:all": "grunt clean:all"
   },
   "scriptsComments": {
     "build": "Build the entire app (backend/frontend) in development mode",
