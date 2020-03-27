@@ -28,7 +28,7 @@
     "start:server": "grunt clean:server && grunt start:server",
     "start:client": "grunt clean:client && grunt start:client",
     "build:server:offline": "cd ./api/cmd/portainer && CGO_ENABLED=0 go build -a --installsuffix cgo --ldflags '-s' && mv -f portainer ../../../dist/portainer",
-    "clean:all": "grunt clean:all"
+    "clean:all": "grunt clean:all",
   },
   "scriptsComments": {
     "build": "Build the entire app (backend/frontend) in development mode",
@@ -124,6 +124,7 @@
     "lodash-webpack-plugin": "^0.11.5",
     "mini-css-extract-plugin": "^0.4.4",
     "ngtemplate-loader": "^2.0.1",
+    "plop": "^2.6.0",
     "postcss-loader": "^3.0.0",
     "speed-measure-webpack-plugin": "^1.2.3",
     "style-loader": "^0.23.1",
